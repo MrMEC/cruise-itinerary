@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Harmony of the Seas — Barcelona & Western Med 2026</title>
+<title>Harmony of the Seas. Barcelona & Western Med 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=Antonio:wght@600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -12,13 +12,13 @@
    DESIGN TOKENS
 ========================================================= */
 :root{
-  /* Accent — cobalt (default) */
+  /* Accent, cobalt (default) */
   --accent: #2D6BFF;
   --accent-2: #22D3EE;
   --accent-glow: rgba(45,107,255,0.35);
   --accent-soft: rgba(45,107,255,0.12);
 
-  /* Theme — dark (default) */
+  /* Theme, dark (default) */
   --bg: #060B17;
   --bg-2: #0A1426;
   --surface: #0E1B30;
@@ -290,7 +290,7 @@ ul{ list-style: none; }
 .gd-backdrop.open{ display:block; }
 
 /* =========================================================
-   HOME PAGE — Editorial cover
+   HOME PAGE. Editorial cover
 ========================================================= */
 .cover{
   position: relative;
@@ -338,7 +338,7 @@ ul{ list-style: none; }
     linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.85) 100%),
     linear-gradient(90deg, rgba(6,11,23,0.55) 0%, rgba(6,11,23,0) 50%);
 }
-/* Vertical flex stack inside the hero — pills at top, flex spacer pushes the
+/* Vertical flex stack inside the hero, pills at top, flex spacer pushes the
    Annie input + title block down to the bottom of the card. The input sits
    just above the title; both move together as the page scrolls. */
 .hero-card .hero-stack{
@@ -1450,10 +1450,10 @@ ul{ list-style: none; }
    ANNIE INPUT
    ────────────────────────────────────────────────────────
    Two visual elements share the same form/handler:
-   • In-hero input (.hero-annie inside the hero card) — the user's
+   • In-hero input (.hero-annie inside the hero card), the user's
      "default" input. Scrolls with the page as the hero scrolls.
    • Fixed bar (.annie-bar-fixed) at top of viewport. On home it's
-     hidden until the hero input scrolls off-screen — JS adds the
+     hidden until the hero input scrolls off-screen. JS adds the
      .visible class to swap them in. On every other page it's
      always shown.
 ========================================================= */
@@ -1474,7 +1474,7 @@ ul{ list-style: none; }
   box-shadow: 0 1px 0 var(--border), 0 4px 16px -12px rgba(0,0,0,0.18);
   transition: opacity 0.18s ease;
 }
-/* On home, hide by default — JS adds .visible once the hero input scrolls off */
+/* On home, hide by default. JS adds .visible once the hero input scrolls off */
 body[data-page="home"] .annie-bar-fixed{
   opacity: 0;
   pointer-events: none;
@@ -1498,7 +1498,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
   box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
-/* In-hero "glass" variant — translucent on the hero image */
+/* In-hero "glass" variant, translucent on the hero image */
 .ask-annie-input.glass{
   background: rgba(255,255,255,0.14);
   border-color: rgba(255,255,255,0.28);
@@ -1551,7 +1551,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 .page{ padding-top: 70px; }
 #page-home{ padding-top: 0; }
 
-/* MOBILE — Ask Annie input lives ONLY in the header (fixed bar), not inside the hero.
+/* MOBILE. Ask Annie input lives ONLY in the header (fixed bar), not inside the hero.
    Hero-annie is hidden and the fixed bar is forced visible at all times. */
 @media (max-width: 767px){
   .hero-card .hero-annie{ display: none; }
@@ -1564,7 +1564,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 }
 
 /* =========================================================
-   PROFILE PAGE — inline tabs (Profile | Customize)
+   PROFILE PAGE, inline tabs (Profile | Customize)
 ========================================================= */
 .profile-tabs{
   position: relative;
@@ -1663,7 +1663,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 .pt-guest-list .gd-row:last-child{ border-bottom: none; }
 
 /* (Responsive media queries moved to the end of this stylesheet so they override
-   the desktop-mobile cascade correctly — see "RESPONSIVE OVERRIDES" below.) */
+   the desktop-mobile cascade correctly, see "RESPONSIVE OVERRIDES" below.) */
 
 
 .bottom-nav{
@@ -1918,7 +1918,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 .tweaks-backdrop.open{ display: block; }
 
 .tweaks-fab{
-  display: none !important; /* legacy hidden — settings gear in top bar replaces this */
+  display: none !important; /* legacy hidden, settings gear in top bar replaces this */
 }
 
 .tweaks-panel{
@@ -1991,7 +1991,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 }
 
 /* =========================================================
-   RESPONSIVE OVERRIDES — tablet & desktop
+   RESPONSIVE OVERRIDES, tablet & desktop
    Placed at end of stylesheet so they cascade-win over the
    mobile-default rules above.
 ========================================================= */
@@ -2129,7 +2129,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
   /* Force labels visible on the rail even if user toggled them off in Customize */
   [data-show-labels="false"] .bottom-nav .tab .label{ display: inline-block; }
 
-  /* Indicator — vertical accent bar on the left edge of the rail */
+  /* Indicator, vertical accent bar on the left edge of the rail */
   .bottom-nav .tab .indicator{
     position: absolute;
     top: 10px; bottom: 10px;
@@ -2143,13 +2143,13 @@ body[data-page="home"] .annie-bar-fixed.visible{
   }
   .bottom-nav .tab.active .indicator{ opacity: 1; }
 
-  /* Notification dot — vertically centered, right-side */
+  /* Notification dot, vertically centered, right-side */
   .bottom-nav .tab .dot-notif{
     top: 50%; right: 14px; left: auto;
     transform: translateY(-50%);
   }
 
-  /* Annie bar (fixed at top of viewport) — offset by the sidebar width on desktop */
+  /* Annie bar (fixed at top of viewport), offset by the sidebar width on desktop */
   .annie-bar-fixed{
     left: 240px;
     right: 0;
@@ -2164,13 +2164,13 @@ body[data-page="home"] .annie-bar-fixed.visible{
   .aa-ava{ width: 36px; height: 36px; }
   .aa-ava svg{ width: 18px; height: 18px; }
 
-  /* Pages — clear the FIXED Annie bar at top of viewport.
+  /* Pages, clear the FIXED Annie bar at top of viewport.
      Home gets 0 because its inline bar is part of the page flow. */
   .page{ padding-top: 76px; }
   #page-home{ padding-top: 0; }
 
   /* ────────────────────────────────────────────────────────────────────
-     UNIFIED CONTENT GUTTER — every section on the home page (and other
+     UNIFIED CONTENT GUTTER, every section on the home page (and other
      pages) shares the same horizontal padding so things align cleanly.
      EXCEPTION: the hero card is intentionally full-bleed (no padding).
      ──────────────────────────────────────────────────────────────────── */
@@ -2232,7 +2232,7 @@ body[data-page="home"] .annie-bar-fixed.visible{
 }
 
 /* =========================================================
-   SECTION TABS — top-level tab switcher used on Days &
+   SECTION TABS, top-level tab switcher used on Days &
    Important Times pages to link to each other.
 ========================================================= */
 .section-tabs{
@@ -2264,7 +2264,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
 }
 
 /* =========================================================
-   PAGE CTA — pill button for opening a related modal/page
+   PAGE CTA, pill button for opening a related modal/page
 ========================================================= */
 .page-cta{
   display: flex; align-items: center; gap: 14px;
@@ -2310,6 +2310,54 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
   transition: color 0.2s, transform 0.2s;
 }
 .page-cta:hover .cta-arrow{ color: var(--accent); transform: translateX(2px); }
+
+/* Cruise Documents link on home, same shape as page-cta but a real <a> */
+.docs-link{
+  display: flex; align-items: center; gap: 14px;
+  width: calc(100% - 2 * var(--pad));
+  margin: 0 var(--pad);
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+.docs-link:hover{
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px -16px var(--accent-glow);
+}
+.docs-link:active{ transform: scale(0.99); }
+.docs-link .docs-icon{
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+}
+.docs-link:hover .docs-icon{ background: var(--accent); color: #fff; }
+.docs-link .docs-icon svg{ width: 22px; height: 22px; }
+.docs-link .docs-text{ flex: 1; min-width: 0; }
+.docs-link .docs-title{ font-size: 15px; font-weight: 700; color: var(--text); }
+.docs-link .docs-sub{ font-size: 12px; color: var(--text-dim); margin-top: 3px; }
+.docs-link .docs-arrow{
+  width: 18px; height: 18px; color: var(--text-dim);
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+}
+.docs-link .docs-arrow svg{ width: 100%; height: 100%; }
+.docs-link:hover .docs-arrow{ color: var(--accent); transform: translate(2px, -2px); }
+@media (min-width: 768px){
+  .docs-link{ width: calc(100% - 64px); margin: 0 32px; max-width: 720px; }
+}
+@media (min-width: 1024px){
+  .docs-link{ width: calc(100% - 80px); margin: 0 40px; }
+}
 
 @media (min-width: 768px){
   .section-tabs{ margin: 0 32px 22px; max-width: 520px; }
@@ -2401,17 +2449,314 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
   .it-title{ font-size: 15px; }
   .it-row{ padding: 14px 16px; }
 }
-@media (min-width: 1024px){
-  .it-group{ padding: 0 40px; }
+/* =========================================================
+   DAY DETAIL. REDESIGN (cleaner, timeline-driven)
+   Overrides the earlier .dd-section / .events-block styles
+   to match a vertical-timeline aesthetic.
+========================================================= */
+.dd-body{ padding-top: 28px; }
+
+/* Slim, restrained section headers, replace the badge-+-eyebrow look
+   with a single bold uppercase title on its own line. */
+.dd-section{ margin-bottom: 36px; scroll-margin-top: 64px; }
+.dd-section h3{
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 0 0 18px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 12px;
+}
+.dd-section h3 .num{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px;
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  letter-spacing: 0;
+  flex-shrink: 0;
 }
 
+/* Lead paragraph: airier, larger */
+.dd-section > p{
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: var(--text) !important;
+  margin: 0 0 22px !important;
+  max-width: 60ch;
+}
+
+/* Vertical timeline replacing the boxed events block */
+.events-block{
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 4px 0 22px;
+  overflow: visible;
+  position: relative;
+}
+.events-block::before{ display: none; }
+.events-head{
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  padding-left: 28px;
+}
+
+.events-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-left: 0;
+}
+/* The vertical timeline line, sits under the left dot column */
+.events-list::before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  bottom: 6px;
+  width: 1.5px;
+  background: var(--border-strong);
+}
+
+.event-row{
+  display: grid;
+  grid-template-columns: 28px 96px 1fr;
+  gap: 14px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  align-items: start;
+  position: relative;
+}
+/* Accent dot anchored to the line */
+.event-row::before{
+  content: "";
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2.5px solid var(--accent);
+  position: relative;
+  margin-top: 4px;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--bg);
+}
+.event-row.event-formal::before,
+.event-row.event-show::before{
+  background: var(--accent);
+}
+.event-row.event-crit::before{
+  border-color: var(--danger);
+}
+
+.event-time{
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 2px 0 0;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+.event-row.event-crit .event-time{ color: var(--danger); }
+.event-row.event-formal .event-time,
+.event-row.event-show .event-time{ color: var(--accent); }
+
+.event-info{ min-width: 0; padding-top: 1px; }
+.event-title{
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.event-where{
+  font-size: 11.5px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  letter-spacing: 0.01em;
+}
+.event-note{
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-top: 6px;
+  line-height: 1.55;
+  max-width: 52ch;
+}
+
+/* Dress code card, softer, more typographic */
+.dress-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin: 0 0 22px;
+}
+.dress-head{
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 8px;
+}
+.dress-icon{ font-size: 16px; }
+.dress-label{
+  font-size: 10px; font-weight: 800; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--accent);
+}
+.dress-title{
+  font-family: var(--font-display);
+  font-size: 17px; line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+.dress-note{
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 8px;
+  max-width: 60ch;
+}
+
+/* Detail lists, quiet rules instead of bullets */
+.detail-list{
+  display: flex; flex-direction: column;
+  gap: 0;
+  margin: 0 0 18px;
+  border-top: 1px solid var(--border);
+}
+.detail-list li{
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.detail-list li::before{ display: none; }
+.detail-list li b{ color: var(--text); font-weight: 700; }
+.detail-list li em{ color: var(--text-dim); font-style: normal; font-family: var(--font-mono); }
+
+/* Tone down the heavy card backgrounds */
+.flight-card-x,
+.tour-card,
+.stay-card,
+.excursion-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 22px;
+}
+.excursion-card{ border-left: 3px solid #34D399; }
+
+/* Tighter, lighter tip/warn/crit callouts */
+.tip, .warn, .crit{
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  line-height: 1.6;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+/* All-aboard banner sits on its own with a top divider */
+.all-aboard-banner{
+  margin-top: 36px;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.all-aboard-banner .time{ font-size: 26px; }
+
+/* Prev/Next day navigation at the bottom of the day detail */
+.dd-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.dd-nav-btn{
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+.dd-nav-btn:hover{
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px -16px var(--accent-glow);
+}
+.dd-nav-btn:active{ transform: scale(0.99); }
+.dd-nav-btn.next{ justify-content: flex-end; text-align: right; }
+.dd-nav-arrow{
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.dd-nav-btn:hover .dd-nav-arrow{ background: var(--accent); color: #fff; }
+.dd-nav-btn.prev:hover .dd-nav-arrow{ transform: translateX(-2px); }
+.dd-nav-btn.next:hover .dd-nav-arrow{ transform: translateX(2px); }
+.dd-nav-arrow svg{ width: 18px; height: 18px; }
+.dd-nav-text{ display: flex; flex-direction: column; min-width: 0; gap: 2px; }
+.dd-nav-lbl{
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.dd-nav-where{
+  font-family: var(--font-display);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--text);
+}
+@media (min-width: 768px){
+  .dd-nav-where{ font-size: 16px; }
+}
+
+@media (min-width: 768px){
+  .dd-section h3{ font-size: 28px; padding-bottom: 14px; }
+  .events-list::before{ left: 9px; }
+  .event-row{ grid-template-columns: 28px 110px 1fr; gap: 18px; }
+  .event-title{ font-size: 15.5px; }
+  .events-head{ font-size: 12px; padding-left: 32px; }
+}
 </style>
 </head>
 <body data-theme="dark" data-accent="cobalt" data-font="archivo" data-density="comfortable" data-show-labels="true" data-page="home">
 
 <div id="app">
 
-  <!-- (Top guest-bar + dropdown removed — moved into the Profile page) -->
+  <!-- (Top guest-bar + dropdown removed, moved into the Profile page) -->
 
   <!-- ============================ GLOBAL ANNIE BAR (fixed in header) ============================
        Visible on every page EXCEPT home. On home it's hidden in favour of the inline sticky
@@ -2442,7 +2787,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
             <h1 class="title">Barcelona<br>& Western<br><span class="accent">Med.</span></h1>
             <div class="sub">31 May → 07 Jun · 7 Nights · 6 Guests</div>
           </div>
-          <!-- Ask Annie input — sits at the bottom of the hero, BELOW the title block.
+          <!-- Ask Annie input, sits at the bottom of the hero, BELOW the title block.
                Scrolls with the page; a fixed twin (#annie-bar-fixed) fades in at the
                top of the viewport once this one scrolls off. -->
           <div class="hero-annie" id="hero-annie">
@@ -2528,7 +2873,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
   <!-- ============================ DAYS ============================ -->
   <div class="page" id="page-days">
     <div class="page-head">
-      <div class="eyebrow">May 31 — Jun 07 · 7 Nights</div>
+      <div class="eyebrow">May 31. Jun 07 · 7 Nights</div>
       <h1>Day by<br>Day</h1>
       <div class="sub">Tap any day for ports, excursions, and logistics.</div>
     </div>
@@ -2577,11 +2922,11 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
     <div style="padding: 0 var(--pad)">
       <div class="formal-card">
         <div class="t">Formal Night · 01</div>
-        <div class="s">Monday, June 1 — After returning from Palma</div>
+        <div class="s">Monday, June 1. After returning from Palma</div>
       </div>
       <div class="formal-card">
         <div class="t">Formal Night · 02</div>
-        <div class="s">Saturday, June 6 — Final sea day</div>
+        <div class="s">Saturday, June 6. Final sea day</div>
       </div>
     </div>
 
@@ -2637,8 +2982,8 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
       <h2>Connectivity</h2>
     </div>
     <div style="padding: 0 var(--pad)">
-      <div class="tip"><b>T-Mobile in Europe</b><br>Free 2G data, texts, email. Calls $0.25/min — use WhatsApp instead. International Day Pass ($5/day) for full LTE on port days.</div>
-      <div class="warn"><b>At Sea — Critical</b><br>T-Mobile does NOT cover ships at sea. Airplane Mode the moment the ship leaves port. Maritime roaming runs $2.50–5.00/MB.</div>
+      <div class="tip"><b>T-Mobile in Europe</b><br>Free 2G data, texts, email. Calls $0.25/min, use WhatsApp instead. International Day Pass ($5/day) for full LTE on port days.</div>
+      <div class="warn"><b>At Sea. Critical</b><br>T-Mobile does NOT cover ships at sea. Airplane Mode the moment the ship leaves port. Maritime roaming runs $2.50–5.00/MB.</div>
       <div class="tip"><b>Ship Wi-Fi (VOOM)</b><br>Buy before the cruise for 20–30% off. The Royal Caribbean app works FREE on the ship's internal network for schedules and group messaging.</div>
     </div>
 
@@ -2666,7 +3011,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
     <div style="padding: 0 var(--pad)">
       <div class="crit">
         <b>⛔ Critical Reminders</b><br>
-        Sagrada Familia: be at meeting point by 2:15 PM — no refunds, no latecomers waited on.<br>
+        Sagrada Familia: be at meeting point by 2:15 PM, no refunds, no latecomers waited on.<br>
         Pisa: meet guide OUTSIDE terminal in green shirt by 9:15 AM.<br>
         MIA Parking: photograph parking level, pillar, and space BEFORE walking away.
       </div>
@@ -2775,7 +3120,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
     <div class="chat-scroll" id="chat-scroll">
       <div class="msg annie">
         <div class="msg-ava"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-        <div class="msg-bubble" id="annie-greeting">Hey crew — I'm Annie, your concierge. I've got every detail of your Barcelona & Western Med trip loaded up: flights, ports, excursions, contacts, all of it. Switch the guest profile up top to personalize my replies, then ask me anything.</div>
+        <div class="msg-bubble" id="annie-greeting">Hello, and welcome aboard the planning side of things. I am Annie, your onboard concierge, and I have every detail of your Barcelona and Western Mediterranean itinerary at my fingertips. That includes the flights, the ports, the excursions, the contacts, dress codes, and the small logistics that make the difference between a good trip and a great one. Switch the guest profile at the top to personalize my replies, and then ask me anything at all.</div>
       </div>
     </div>
 
@@ -2810,7 +3155,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
 
   <!-- BOTTOM TAB BAR (becomes left side rail on tablet/desktop) -->
   <nav class="bottom-nav">
-    <!-- Brand / greeting block — only visible on tablet/desktop side rail.
+    <!-- Brand / greeting block, only visible on tablet/desktop side rail.
          Logo mark → home. Name → profile page. -->
     <div class="nav-brand">
       <button class="nb-mark" onclick="goTab('home')" aria-label="Home">
@@ -2852,7 +3197,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
 
 </div>
 
-<!-- (Tweaks FAB removed — controls live in Profile › Customize) -->
+<!-- (Tweaks FAB removed, controls live in Profile › Customize) -->
 
 <!-- Contacts Modal -->
 <div class="contacts-backdrop" id="contacts-backdrop" onclick="closeContacts()"></div>
@@ -2880,7 +3225,7 @@ body[data-page="important-times"] .st-tab[data-st="important-times"]{
   </div>
 </div>
 
-<!-- Tweaks panel removed — its controls now live in Profile › Customize -->
+<!-- Tweaks panel removed, its controls now live in Profile › Customize -->
 
 <script>
 /* =========================================================
@@ -2913,7 +3258,7 @@ const IMG = {
 ========================================================= */
 const DAYS = [
   {
-    n: 0, label: 'PRE', date: 'Thu May 28 — Sun May 31', dateShort: 'May 28–31',
+    n: 0, label: 'PRE', date: 'Thu May 28. Sun May 31', dateShort: 'May 28–31',
     where: 'Barcelona', country: 'Pre-Cruise · Miami → BCN → Sagrada',
     status: '🏨 Miami Marriott · ✈ AA 112 · Airbnb Poble Sec',
     pill: { type: 'booked', text: 'Event Booked' },
@@ -2929,16 +3274,16 @@ const DAYS = [
     ],
     sections: {
       overview: {
-        text: "Four days before the ship. Mark drives down to Miami on May 28 with Sonia, Jonathan, and Heather — overnight at the SpringHill Suites near MIA. Nick and Jasmine drive from Orlando on May 29. Whole group meets at MIA for the evening flight, lands Barcelona Saturday morning, and has two days in Poble Sec at the Airbnb before embarkation. The headline event is the Sagrada Familia tour at 2:30 PM on May 30.",
+        text: "Here is how the front half of your trip unfolds. On Thursday, May 28, Mark drives down to Miami with Sonia, Jonathan, and Heather, and the four of you settle in for the night at the SpringHill Suites just minutes from MIA. The next morning, Nick and Jasmine make the easy drive over from Orlando, and the whole group converges at the airport for the evening transatlantic flight. You land in Barcelona on Saturday morning with two full days to enjoy the Poble Sec neighborhood before walking onto the ship. The marquee experience of these pre-cruise days is your Sagrada Familia tour at 2:30 PM on May 30, which I have personally selected as one of the absolute highlights of the trip.",
         list: [
-          "<b>Thu, May 28 · Drive Day</b> — Mark, Sonia, Jonathan, Heather drive Clermont → Miami · check in at SpringHill Suites",
-          "<b>Fri, May 29 · 9:00 AM</b> — Nick & Jasmine leave Orlando, drive to MIA",
-          "<b>Fri, May 29 · 12:00 PM</b> — Mark/Sonia/Jon/Heather check out of Miami hotel (free MIA shuttle)",
-          "<b>Fri, May 29 · 7:05 PM</b> — Depart MIA on <b>AA 112</b> (all 6 together)",
-          "<b>Sat, May 30 · 10:10 AM</b> — Land Barcelona (BCN), 2 taxis to Airbnb",
-          "<b>Sat, May 30 · 12:00 PM</b> — Stan confirmed early bag drop · keys handed off",
-          "<b>Sat, May 30 · 2:30 PM</b> — Sagrada Familia tour (PE168289929)",
-          "<b>Sun, May 31 · 10:00 AM</b> — Airbnb checkout, 2 taxis to cruise terminal"
+          "<b>Thu, May 28 · Drive Day</b>. Mark, Sonia, Jonathan, Heather drive Clermont → Miami · check in at SpringHill Suites",
+          "<b>Fri, May 29 · 9:00 AM</b>. Nick & Jasmine leave Orlando, drive to MIA",
+          "<b>Fri, May 29 · 12:00 PM</b>. Mark/Sonia/Jon/Heather check out of Miami hotel (free MIA shuttle)",
+          "<b>Fri, May 29 · 7:05 PM</b>. Depart MIA on <b>AA 112</b> (all 6 together)",
+          "<b>Sat, May 30 · 10:10 AM</b>. Land Barcelona (BCN), 2 taxis to Airbnb",
+          "<b>Sat, May 30 · 12:00 PM</b>. Stan confirmed early bag drop · keys handed off",
+          "<b>Sat, May 30 · 2:30 PM</b>. Sagrada Familia tour (PE168289929)",
+          "<b>Sun, May 31 · 10:00 AM</b>. Airbnb checkout, 2 taxis to cruise terminal"
         ]
       },
       hotel: {
@@ -2953,12 +3298,12 @@ const DAYS = [
           phoneLabel: 'Marriott',
           phone: '1-800-228-9290'
         },
-        text: "All-suite hotel in the Blue Lagoon area overlooking Lake Mahar, just minutes from MIA. Free airport shuttle (use it both directions — leave car parked at the hotel? NO — we still need to park at MIA Dolphin Garage on Friday). For Thursday night only: Mark, Sonia, Jonathan, Heather. Nick and Jasmine drive in from Orlando on Friday and meet everyone at MIA.",
+        text: "I selected this property specifically for its location in the Blue Lagoon area, where the suites overlook Lake Mahar and you are just a few minutes from Miami International. The hotel runs a complimentary shuttle to MIA on demand, which I recommend you use for the Friday airport run. Please note that the car still needs to be parked at the MIA Dolphin Garage on Friday rather than left at the hotel, because you will be away for ten days. This Thursday night reservation covers Mark, Sonia, Jonathan, and Heather only. Nick and Jasmine drive in from Orlando the following morning and meet everyone at the airport gate.",
         tip: "<b>🏨 Booking 6368610497</b><br>Check-in 3:00 PM Thursday · Check-out 12:00 PM Friday · Min check-in age 21 · Smoke-free property · On-site parking $20/day · Free hot breakfast · Free Wi-Fi · Outdoor heated pool · Free MIA shuttle on demand.",
         list: [
-          "<b>Mark + Sonia</b> — one room · <b>Jonathan + Heather</b> — second room (both on the same reservation)",
+          "<b>Mark + Sonia</b>, one room · <b>Jonathan + Heather</b>, second room (both on the same reservation)",
           "Check in <b>after 3:00 PM</b> Thursday May 28 · check out by <b>12:00 PM</b> Friday May 29",
-          "Free hot breakfast 6:30–9:30 AM Friday — eat before the airport run",
+          "Free hot breakfast 6:30–9:30 AM Friday, eat before the airport run",
           "Iguana Bar & Lounge + lake-view patio on-site for dinner Thursday night",
           "Property is ~10 min from MIA · use the free hotel shuttle (call from lobby)",
           "Drive: FL-50 E → Florida's Turnpike S → SR-836 W → NW 7th Street · ~235 mi · 4.5–5 hrs"
@@ -2977,8 +3322,8 @@ const DAYS = [
         },
         tip: "<b>🚗 Getting to MIA · Friday May 29</b><br>Mark/Sonia/Jon/Heather: check out of SpringHill by noon, free shuttle to MIA in the afternoon. Nick & Jasmine: leave Orlando ~9:00 AM, drive straight to MIA Dolphin Garage (~3.5–4 hrs). Whole group meets at the AA gate. Be at MIA by <b>4:00 PM</b> latest for the 7:05 PM departure.",
         list: [
-          "<b>MIA Dolphin Garage</b> — closest covered garage to AA terminal · connects via MIA Mover (free) · ~$200–220/car for 10 days · Nick parks here Friday",
-          "<b>Photograph parking</b>: level, pillar, space — BEFORE walking away",
+          "<b>MIA Dolphin Garage</b>, closest covered garage to AA terminal · connects via MIA Mover (free) · ~$200–220/car for 10 days · Nick parks here Friday",
+          "<b>Photograph parking</b>: level, pillar, space. BEFORE walking away",
           "AA uses <b>Terminal 1 (T1)</b> at BCN · T1/T2 are separate buildings",
           "Have passports in carry-on, not checked luggage",
           "Seat assignments (Row 34): Jasmine A · Nick B · Sonia C · Mark D · Jonathan E · Heather G"
@@ -2995,15 +3340,15 @@ const DAYS = [
           rep: '+1 202 684 6916',
           duration: '1 hr 30 min'
         },
-        text: "All 6 of us booked on the Sagrada Familia Highlights Tour with skip-the-line tickets. Led by an expert local guide, the 90-minute walking tour traces Gaudí's still-unfinished basilica from the Nativity Façade through the nave and choir, with stops at the Passion Façade and the crypt. The guide unpacks how Gaudí translated forms from nature into the load-bearing geometry of the columns, the meaning behind the four bell-tower groupings, and the symbolism baked into the stained glass that floods the interior with shifting color as the sun moves. Skip-the-line entry means we walk past the general queue at the side gate; tickets live on your phone. <b>Reservation status: Confirmed.</b> Paid in full — no refunds for late arrivals or no-shows.",
-        crit: "<b>⛔ Critical</b><br><b>BE at meeting point by 2:15 PM</b> — no refunds, no latecomers. Av. de Gaudí 2 (between KFC and Burger King). Look for the guide holding a <b>GREEN WALKS SIGN</b> at the lamp post.",
+        text: "All six of you are booked on the Sagrada Familia Highlights Tour with skip-the-line tickets, which is exactly the right way to see this masterpiece. Over ninety minutes, your local expert guide will trace Gaudí's still-unfinished basilica from the Nativity Façade through the nave and choir, with stops at the Passion Façade and the crypt below. Expect to learn how Gaudí drew his column geometry from the load-bearing structures he observed in nature, the meaning behind the four bell-tower groupings, and the symbolism woven into the stained glass that floods the interior with shifting color as the sun moves across the sky. Because we booked skip-the-line entry, you will walk past the general queue at the side gate. Your tickets live on your phone. The reservation is fully confirmed and paid in full. Please be aware that no refunds are issued for late arrivals or no-shows, so we want to be at the meeting point in plenty of time.",
+        crit: "<b>⛔ Critical</b><br><b>BE at meeting point by 2:15 PM</b>, no refunds, no latecomers. Av. de Gaudí 2 (between KFC and Burger King). Look for the guide holding a <b>GREEN WALKS SIGN</b> at the lamp post.",
         warn: "<b>👗 Dress code</b><br>Shoulders AND knees must be covered. Entry refused otherwise. Pack a light scarf or layer as backup.",
         list: [
-          "Metro stop: <b>Sagrada Familia</b> on lines L2 (purple) and L5 (blue) — multiple exits",
+          "Metro stop: <b>Sagrada Familia</b> on lines L2 (purple) and L5 (blue), multiple exits",
           "Tour <b>includes</b>: skip-the-line tickets + expert guide",
           "Tour does <em>not</em> include: tower access, gratuities, hotel pickup, headsets",
-          "<b>Bring a reusable water bottle</b> — refill on tour (no plastic provided)",
-          "Ticket lives on your phone — no need to print",
+          "<b>Bring a reusable water bottle</b>, refill on tour (no plastic provided)",
+          "Ticket lives on your phone, no need to print",
           "Walks emergency line: +1 202 684 6916"
         ]
       },
@@ -3017,23 +3362,23 @@ const DAYS = [
           conf: 'HM8P4T5A5Z',
           phone: '+34 648 66 86 80'
         },
-        text: "Two-night stay in Poble Sec, 300m from Las Ramblas. Stan confirmed early bag-drop at 11 AM Saturday — drop bags, grab keys, head out, come back after 3 PM.",
+        text: "Your two nights in Barcelona are at a comfortable three-bedroom apartment in Poble Sec, one of my favorite neighborhoods to recommend to clients. It sits about 300 meters from Las Ramblas, so you are walking distance to everything that matters yet tucked into a quieter, more local pocket of the city. Stan, your host, has very kindly confirmed an early bag drop at noon on Saturday. The plan is simple: arrive, leave the luggage, collect your keys, and head out to explore. Rooms will be fully ready when you return after 3 PM.",
         tip: "<b>Text Stan the night before</b>: +34 648 66 86 80 to confirm arrival window.",
         list: [
-          "Land BCN 9:05 AM → 2 taxis/Ubers straight to Airbnb (~25–35 EUR each)",
-          "11:00 AM — early bag drop confirmed with Stan",
+          "Land BCN 10:10 AM → 2 taxis/Ubers straight to Airbnb (~25–35 EUR each)",
+          "11:00 AM, early bag drop confirmed with Stan",
           "Keys handed off · explore city while rooms turn over",
-          "Sunday May 31 — checkout by 10:00 AM, 2 taxis to cruise terminal"
+          "Sunday May 31, checkout by 10:00 AM, 2 taxis to cruise terminal"
         ]
       },
       around: {
-        text: "Late-morning to early-afternoon free time on Saturday before the Sagrada tour, plus all of Sunday morning before embarkation.",
+        text: "You have a generous block of free time on Saturday between bag drop and the 2:30 PM Sagrada tour, plus all of Sunday morning before you board the ship at 1:00 PM. Below are the spots I would prioritize given how close they are to the apartment.",
         list: [
-          "<b>Las Ramblas</b> — 300 m from the Airbnb · classic Barcelona boulevard stroll",
-          "<b>El Born / Gothic Quarter</b> — medieval lanes, tapas bars, Barcelona Cathedral",
-          "<b>Barceloneta Beach</b> — 20-min walk or 5-min taxi",
-          "<b>Mercat de la Boqueria</b> — go before 11 AM to avoid crowds",
-          "<b>Park Güell</b> — Gaudí park if you have a full half-day · book tickets online"
+          "<b>Las Ramblas</b>, 300 m from the Airbnb · classic Barcelona boulevard stroll",
+          "<b>El Born / Gothic Quarter</b>, medieval lanes, tapas bars, Barcelona Cathedral",
+          "<b>Barceloneta Beach</b>, 20-min walk or 5-min taxi",
+          "<b>Mercat de la Boqueria</b>, go before 11 AM to avoid crowds",
+          "<b>Park Güell</b>. Gaudí park if you have a full half-day · book tickets online"
         ]
       }
     }
@@ -3048,12 +3393,12 @@ const DAYS = [
     targetReturn: '3:00 PM',
     sections: {
       overview: {
-        text: "Boarding day. Drop bags at the terminal early, head to lunch onboard, and watch the skyline fade from Deck 10 as the ship leaves port.",
+        text: "Welcome to embarkation day. Plan to arrive at the cruise terminal between 12:30 and 1:00 PM. You will hand off your large luggage curbside, breeze through check-in, and step onto Harmony of the Seas for the first time. Head up to lunch while the crew finishes preparing the staterooms, which open at 1:30 PM. The ship is enormous, so take an hour to orient yourselves before the muster drill, which you can complete on the Royal Caribbean app at your own pace. By late afternoon, find a good vantage point on Deck 10 and watch the Barcelona skyline slowly fade as the ship pulls away at 5:00 PM. It is one of those quiet moments that makes the whole trip feel real.",
         list: [
           "Arrive terminal by <b>12:30–1:00 PM</b> · Rooms ready 1:30 PM",
           "Complete <b>muster drill</b> via the RC app before sailing",
-          "<b>All aboard by 4:00 PM</b> — ship departs for Palma de Mallorca",
-          "Depart Barcelona at 5:00 PM — watch the skyline fade from Deck 10"
+          "<b>All aboard by 4:00 PM</b>, ship departs for Palma de Mallorca",
+          "Depart Barcelona at 5:00 PM, watch the skyline fade from Deck 10"
         ],
         events: [
           { time: '10:30 AM', kind: 'crit',  title: 'Guest Safety Briefing', where: 'Muster Station C-4 · via RC app' },
@@ -3063,7 +3408,7 @@ const DAYS = [
         dress: {
           icon: '👕',
           title: 'Resort Casual',
-          note: 'Embarkation evening — relaxed but put-together. Light dress, collared shirt, nice shorts or slacks. No swimwear or tank tops in the Main Dining Room.'
+          note: 'Embarkation evening, relaxed but put-together. Light dress, collared shirt, nice shorts or slacks. No swimwear or tank tops in the Main Dining Room.'
         }
       },
       around: {
@@ -3075,21 +3420,21 @@ const DAYS = [
       },
       see: {
         list: [
-          "Park Cafe (Deck 8) or Solarium Bistro (Deck 15) — avoid Windjammer buffet crowds at lunch",
+          "Park Cafe (Deck 8) or Solarium Bistro (Deck 15), avoid Windjammer buffet crowds at lunch",
           "Book specialty dining at Royal Promenade kiosks (Deck 5)",
-          "Visit the Spa — discounted packages often on embarkation day",
+          "Visit the Spa, discounted packages often on embarkation day",
           "Reserve FlowRider & rock climbing wall at the activity desk"
         ]
       },
       food: {
         list: [
-          "Park Cafe (Deck 8) — quick lunch, less crowded",
-          "Solarium Bistro (Deck 15) — adults-only, healthier options",
+          "Park Cafe (Deck 8), quick lunch, less crowded",
+          "Solarium Bistro (Deck 15), adults-only, healthier options",
           "Main Dining Room opens for embarkation lunch"
         ]
       },
       logistics: {
-        tip: "<b>Bring your passport on you</b> — you'll need it at check-in. Don't pack it in checked luggage.",
+        tip: "<b>Bring your passport on you</b>, you'll need it at check-in. Don't pack it in checked luggage.",
         list: [
           "Group on <b>Deck 10</b> · staterooms 10181 · 10182 · 10183 (Balcony)",
           "Muster station: C-4",
@@ -3108,7 +3453,7 @@ const DAYS = [
     targetReturn: '2:45 PM',
     sections: {
       overview: {
-        text: "First port. Half-day in the old town and along the scenic waterfront. Back onboard well before all-aboard.",
+        text: "Today you wake up in Palma de Mallorca, the elegant capital of the Balearic Islands and your first port of call. With the ship docked from 8:30 AM until 3:30 PM, you have a comfortable half-day to enjoy the old town and the waterfront promenade. My suggestion is to be ashore by 9:00 AM, work your way through the medieval streets toward La Seu, the gothic cathedral perched right above the sea, and circle back to the ship by 1:30 PM. That gives you a relaxed buffer before the 2:45 PM onboard target. Tonight is the first formal evening of the sailing, so dress to impress and stop by the Royal Promenade for complimentary portraits before dinner.",
         list: [
           "Docked: <b>8:30am – 3:30pm</b>",
           "<b>Target onboard by 2:45pm</b> · All aboard 3:30pm",
@@ -3122,36 +3467,36 @@ const DAYS = [
         dress: {
           icon: '🎩',
           title: 'Formal Night #1 · Dress Your Best',
-          note: 'Suits, cocktail dresses, jacket-required vibe in the Main Dining Room. Free portraits in the Promenade at 5:30 PM — go before dinner.'
+          note: 'Suits, cocktail dresses, jacket-required vibe in the Main Dining Room. Free portraits in the Promenade at 5:30 PM, go before dinner.'
         }
       },
       around: {
         list: [
-          "Ship shuttle (free/low-cost) from terminal — check Daily Planner",
+          "Ship shuttle (free/low-cost) from terminal, check Daily Planner",
           "Taxi to Old Town: ~8–12 EUR, 5–10 min",
           "Walk: 1.5 km along scenic waterfront promenade (~20 min)"
         ]
       },
       see: {
         list: [
-          "<b>Palma Cathedral (La Seu)</b> — gothic masterpiece on the waterfront",
-          "<b>Royal Palace of La Almudaina</b> — across from Cathedral",
-          "<b>Passeig del Born</b> — main shopping street, plenty of cafes",
-          "<b>Bellver Castle</b> — circular hilltop fortress, panoramic views (taxi)",
-          "Old Town lanes — Sa Llotja, Plaça Major, Arab Baths"
+          "<b>Palma Cathedral (La Seu)</b>, gothic masterpiece on the waterfront",
+          "<b>Royal Palace of La Almudaina</b>, across from Cathedral",
+          "<b>Passeig del Born</b>, main shopping street, plenty of cafes",
+          "<b>Bellver Castle</b>, circular hilltop fortress, panoramic views (taxi)",
+          "Old Town lanes. Sa Llotja, Plaça Major, Arab Baths"
         ]
       },
       food: {
         list: [
-          "Tapas at <b>Bar España</b> — classic spot near Plaça Major",
-          "<b>Forn des Teatre</b> — historic bakery for ensaïmadas",
+          "Tapas at <b>Bar España</b>, classic spot near Plaça Major",
+          "<b>Forn des Teatre</b>, historic bakery for ensaïmadas",
           "Coffee at any waterfront café before heading back"
         ]
       },
       logistics: {
-        tip: "<b>Formal Night likely tonight</b> — first formal night usually falls on the night after the first port.",
+        tip: "<b>Formal Night likely tonight</b>, first formal night usually falls on the night after the first port.",
         list: [
-          "Bring sun protection — exposed promenade walk back",
+          "Bring sun protection, exposed promenade walk back",
           "Carry small EUR cash for café tipping"
         ]
       }
@@ -3167,7 +3512,7 @@ const DAYS = [
     targetReturn: '3:15 PM',
     sections: {
       overview: {
-        text: "Marseille is France's oldest city — Mediterranean grit, sun, and the iconic Vieux-Port. Self-guided day.",
+        text: "Marseille is France's oldest city, and it carries itself with a Mediterranean swagger you will not find anywhere else in the country. You are docked from 9:30 AM to 4:00 PM, which is a tighter window, so I have kept this day deliberately self-guided to give you flexibility. A free port shuttle runs from the terminal to the Joliette transit hub, where you can pick up the metro one stop to the Vieux-Port. Spend the day along the old harbor, wander the lanes of Le Panier, and if energy permits, ride the Petit Train up to Notre-Dame de la Garde for the view. Aim to be back onboard by 3:15 PM so there is no rush at the gangway.",
         list: [
           "Docked: <b>9:30am – 4pm</b>",
           "<b>Target onboard by 3:15pm</b> · All aboard 4pm",
@@ -3177,7 +3522,7 @@ const DAYS = [
           { time: '5:00 PM',  kind: 'event', title: 'RYDE Indoor Cycling',           where: 'Fitness Center · Deck 6, Forward' },
           { time: '5:15 PM',  kind: 'event', title: 'Visual Trivia: House of Mouse', where: 'On Air · Deck 5, Forward' },
           { time: '6:45 PM',  kind: 'event', title: 'Jazz Standards with the Harmony Orchestra', where: 'Royal Promenade · Deck 5, Midship' },
-          { time: '8:00 PM',  kind: 'show',  title: 'Signature Artist · Duo Gold Art', where: 'Royal Theater · Deck 4, Forward', note: "Aerial feats, comedy, and magic — a blend of skill and humor. Early arrival recommended (first-come, first-served)." }
+          { time: '8:00 PM',  kind: 'show',  title: 'Signature Artist · Duo Gold Art', where: 'Royal Theater · Deck 4, Forward', note: "Aerial feats, comedy, and magic, a blend of skill and humor. Early arrival recommended (first-come, first-served)." }
         ]
       },
       around: {
@@ -3189,16 +3534,16 @@ const DAYS = [
       },
       see: {
         list: [
-          "<b>Vieux-Port (Old Port)</b> — heart of Marseille, fish market, locals, cafés",
-          "<b>MuCEM</b> — stunning modern museum, footbridge to Fort Saint-Jean",
-          "<b>Notre-Dame de la Garde</b> — hilltop basilica with 360° views; take the Petit Train",
-          "<b>Le Panier</b> — old quarter, narrow lanes, street art"
+          "<b>Vieux-Port (Old Port)</b>, heart of Marseille, fish market, locals, cafés",
+          "<b>MuCEM</b>, stunning modern museum, footbridge to Fort Saint-Jean",
+          "<b>Notre-Dame de la Garde</b>, hilltop basilica with 360° views; take the Petit Train",
+          "<b>Le Panier</b>, old quarter, narrow lanes, street art"
         ]
       },
       food: {
         list: [
-          "Bouillabaisse at <b>Chez Fonfon</b> — the iconic Marseille fish stew",
-          "<b>Les Navettes des Accoules</b> — orange-blossom biscuits, oldest bakery",
+          "Bouillabaisse at <b>Chez Fonfon</b>, the iconic Marseille fish stew",
+          "<b>Les Navettes des Accoules</b>, orange-blossom biscuits, oldest bakery",
           "Pastis at any Vieux-Port terrace"
         ]
       },
@@ -3221,13 +3566,13 @@ const DAYS = [
     sections: {
       overview: {
         excursion: {
-          title: 'Pisa Excursion — Order #2113123',
+          title: 'Pisa Excursion. Order #2113123',
           when: '9:30 AM LOCAL',
           where: 'Outside terminal',
           guide: 'Green Shore Experience t-shirt',
           rep: '+39 339 628 1382'
         },
-        text: "Big day — Pisa excursion booked for all 6. Tendered port (long lines if you miss your slot), so be ready early.",
+        text: "This is one of the biggest days of the trip, with the Pisa excursion booked for all six of you. La Spezia is a tendered port, which means small boats ferry guests from the ship to shore. If you miss your tender window the lines balloon quickly, so I want everyone up and moving early. Gangway opens at 7:00 AM. You will take the La Spezia port shuttle to Largo Michele Fiorillo and look for your guide, who will be wearing a green Shore Experience t-shirt, by 9:15 AM. From there, a coach takes you on the one-hour ride to Pisa for an unhurried visit to Piazza dei Miracoli. You will have free time for lunch, gelato, and the obligatory leaning-tower photos before the return coach brings you back to the terminal. Target onboard by 6:30 PM.",
         list: [
           "Docked: <b>7am – 7:30pm</b>",
           "Gangway opens <b>7am</b>",
@@ -3236,7 +3581,7 @@ const DAYS = [
           "<b>Target onboard by 6:30pm</b> · All aboard 7:30pm"
         ],
         events: [
-          { time: '8:00 PM',  kind: 'show',  title: '1887: A Journey in Time', where: 'Studio B · Deck 4, Midship', note: "Harmony's signature ice show — ALL 6 GUESTS booked" },
+          { time: '8:00 PM',  kind: 'show',  title: '1887: A Journey in Time', where: 'Studio B · Deck 4, Midship', note: "Harmony's signature ice show. ALL 6 GUESTS booked" },
           { time: '10:30 PM', kind: 'show',  title: 'Tribute to Stevie Wonder with the Orchestra', where: 'Deck 8, Aft' }
         ],
         dress: {
@@ -3254,15 +3599,15 @@ const DAYS = [
       },
       see: {
         list: [
-          "<b>Piazza dei Miracoli</b> — Cathedral, Baptistry, Leaning Tower",
-          "Baptistry — hear the <b>12-second echo</b> at top of/half hour",
+          "<b>Piazza dei Miracoli</b>. Cathedral, Baptistry, Leaning Tower",
+          "Baptistry, hear the <b>12-second echo</b> at top of/half hour",
           "~3 hours <em>free time</em> for lunch, gelato, and shopping"
         ]
       },
       food: {
         list: [
-          "<b>Gelateria De Coltelli</b> — top artisan gelato near Piazza dei Miracoli",
-          "<b>Trattoria Da Matteo</b> — traditional Pisan food; try the cecina",
+          "<b>Gelateria De Coltelli</b>, top artisan gelato near Piazza dei Miracoli",
+          "<b>Trattoria Da Matteo</b>, traditional Pisan food; try the cecina",
           "Street porchetta panini around the Piazza"
         ]
       },
@@ -3287,13 +3632,13 @@ const DAYS = [
     sections: {
       overview: {
         excursion: {
-          title: 'Panoramic Rome — RC Excursion',
+          title: 'Panoramic Rome. RC Excursion',
           when: 'Depart ship 9:15 AM',
           where: 'Gangway · 10 min early',
           guide: 'Royal Caribbean coach',
           rep: 'Operator manages return'
         },
-        text: "All 6 guests on RC's panoramic Rome bus. ~1–1.5 hrs each way, drive-by sights, plus stops at Vatican and Trevi.",
+        text: "Today is Rome, and all six of you are on Royal Caribbean's Panoramic Rome motor-coach excursion. The coach departs the ship at 9:15 AM sharp, so be at the gangway about ten minutes early. The drive from Civitavecchia into the city takes between one and one and a half hours each way depending on traffic. Once in Rome, you will see the major landmarks by coach with photo stops, plus on-foot time at the Vatican and Trevi Fountain. I deliberately steered us away from independent rail today because the timing is simply too tight for a port day, and the operator handles the return logistics so we are guaranteed back to the ship on time. Tonight is Caribbean Night onboard, so pack something tropical for dinner.",
         list: [
           "Docked: <b>7:30am – 6:30pm</b>",
           "Coach departs ship at <b>9:15 AM</b>",
@@ -3314,22 +3659,22 @@ const DAYS = [
       around: {
         list: [
           "Civitavecchia → Rome: ~1–1.5 hr coach each way",
-          "Don't try independent rail today — too tight"
+          "Don't try independent rail today, too tight"
         ]
       },
       see: {
         list: [
           "Colosseum exterior + panoramic view",
-          "Vatican — Piazza San Pietro (bags checked, dress code enforced)",
-          "Trevi Fountain — move quickly, watch for pickpockets",
+          "Vatican. Piazza San Pietro (bags checked, dress code enforced)",
+          "Trevi Fountain, move quickly, watch for pickpockets",
           "Spanish Steps and Piazza Navona"
         ]
       },
       food: {
         list: [
-          "Gelato near Trevi — avoid the ones <em>right on</em> the piazza",
+          "Gelato near Trevi, avoid the ones <em>right on</em> the piazza",
           "Walk one block off any major piazza for normal prices",
-          "Vatican souvenir shop inside the walls — medals & keepsakes"
+          "Vatican souvenir shop inside the walls, medals & keepsakes"
         ]
       },
       logistics: {
@@ -3351,45 +3696,51 @@ const DAYS = [
     targetReturn: '6:00 PM',
     sections: {
       overview: {
-        text: "Most walkable port of the trip — the cruise terminal is inside the city. Walk straight off the gangway into Naples.",
+        text: "Naples is the most walkable port of the entire itinerary, and you are going to love it. The cruise terminal sits right in the heart of the city, so there is no shuttle, no bus, and no excursion required. You simply step off the gangway and you are already in town. I have built a self-guided day for you below that hits Spaccanapoli, Piazza del Plebiscito, Castel dell'Ovo, and of course the pizza pilgrimage to L'Antica Pizzeria da Michele. The ship is docked from 7:00 AM to 7:00 PM, which gives you a luxurious twelve hours ashore. Target onboard by 6:00 PM. Tonight is the second formal evening of the sailing.",
         list: [
           "Docked: <b>7am – 7pm</b>",
-          "Walk straight off the gangway — no shuttle or bus",
+          "Walk straight off the gangway, no shuttle or bus",
           "<b>Target onboard by 6pm</b> · All aboard 7pm"
         ],
         events: [
-          { time: '10:30 PM', kind: 'event', title: 'Battle of the Sexes Game Show (18+)', where: 'Studio B · Deck 4, Midship · 45 min' },
-          { time: '11:15 PM', kind: 'event', title: 'Game Show: The Crazy Quest (18+)',    where: 'Studio B · Deck 4, Midship · 45 min', note: 'Bring your SeaPass. Early arrival recommended, first-come, first-served.' }
-        ]
+          { time: '5:00 PM',  kind: 'formal', title: 'Formal Night · Dress Your Best',     where: 'Ship-wide · Main Dining + Promenade' },
+          { time: '10:30 PM', kind: 'event',  title: 'Battle of the Sexes Game Show (18+)', where: 'Studio B · Deck 4, Midship · 45 min' },
+          { time: '11:15 PM', kind: 'event',  title: 'Game Show: The Crazy Quest (18+)',    where: 'Studio B · Deck 4, Midship · 45 min', note: 'Bring your SeaPass. Early arrival recommended, first-come, first-served.' }
+        ],
+        dress: {
+          icon: '🎩',
+          title: 'Formal Night #2 · Dress Your Best',
+          note: 'Second formal evening of the sailing, suits, cocktail dresses, jacket-required vibe in the Main Dining Room.'
+        }
       },
       around: {
         list: [
           "Walk to Spaccanapoli (~15 min from terminal)",
-          "<b>Pompeii option</b>: Circumvesuviana train from Napoli Centrale (~30 min, ~3 EUR each way) — allow 4–5 hours total"
+          "<b>Pompeii option</b>: Circumvesuviana train from Napoli Centrale (~30 min, ~3 EUR each way), allow 4–5 hours total"
         ]
       },
       see: {
         list: [
-          "7:30 AM: Gangway opens — walk to <b>Spaccanapoli</b>",
-          "8:00–10:00 AM: Walk Spaccanapoli — churches, bakeries, Gesu Nuovo, Santa Chiara cloister",
-          "10:00 AM: <b>Piazza del Plebiscito</b> — Royal Palace, Basilica, grand square",
-          "12:30 PM: <b>Castel dell'Ovo</b> — FREE entry, excellent harbour views",
-          "2:00 PM (optional): <b>National Archaeological Museum</b> — world-class Pompeii artifacts",
+          "7:30 AM: Gangway opens, walk to <b>Spaccanapoli</b>",
+          "8:00–10:00 AM: Walk Spaccanapoli, churches, bakeries, Gesu Nuovo, Santa Chiara cloister",
+          "10:00 AM: <b>Piazza del Plebiscito</b>. Royal Palace, Basilica, grand square",
+          "12:30 PM: <b>Castel dell'Ovo</b>. FREE entry, excellent harbour views",
+          "2:00 PM (optional): <b>National Archaeological Museum</b>, world-class Pompeii artifacts",
           "4:00 PM: Head back toward terminal along Via Partenope"
         ]
       },
       food: {
         list: [
-          "<b>L'Antica Pizzeria da Michele</b> (Via Cesare Sersale 1) — most famous pizzeria in Naples · Margherita or Marinara only · cash · arrive BEFORE noon",
-          "<b>Pizzeria Gino Sorbillo</b> (Via dei Tribunali 32) — great alternative",
-          "<b>Sfogliatelle</b> — flaky shell, ricotta. Pasticceria Pintauro on Via Toledo",
-          "<b>Limoncello</b> — buy a bottle to bring home (wrapped, checked luggage)"
+          "<b>L'Antica Pizzeria da Michele</b> (Via Cesare Sersale 1), most famous pizzeria in Naples · Margherita or Marinara only · cash · arrive BEFORE noon",
+          "<b>Pizzeria Gino Sorbillo</b> (Via dei Tribunali 32), great alternative",
+          "<b>Sfogliatelle</b>, flaky shell, ricotta. Pasticceria Pintauro on Via Toledo",
+          "<b>Limoncello</b>, buy a bottle to bring home (wrapped, checked luggage)"
         ]
       },
       logistics: {
-        warn: "<b>⚠️ Safety note</b>: Naples has a reputation for petty crime. Keep bags zipped, phones in front pockets, wallets in interior pockets. Millions visit safely — just stay aware.",
+        warn: "<b>⚠️ Safety note</b>: Naples has a reputation for petty crime. Keep bags zipped, phones in front pockets, wallets in interior pockets. Millions visit safely, just stay aware.",
         list: [
-          "<b>Sansevero Chapel</b> — book online if you want to see the Veiled Christ",
+          "<b>Sansevero Chapel</b>, book online if you want to see the Veiled Christ",
           "Via Toledo is Naples' main shopping street"
         ]
       }
@@ -3404,32 +3755,34 @@ const DAYS = [
     allAboard: null,
     sections: {
       overview: {
-        text: "Last full day onboard. Squeeze in everything you haven't gotten to — FlowRider, climbing wall, AquaTheater, pool deck. Pack tonight.",
+        text: "Today is your final full day onboard, and the ship spends it cruising west back toward Barcelona. Use the morning to circle back to anything you have not yet tried. The FlowRider surf simulator, the rock-climbing wall, the AquaTheater, and the pool deck all reward a return visit. The 3:00 PM matinee of Columbus, the Musical! at the Royal Theater is the show of the day. After dinner, settle your onboard account through the Royal Caribbean app to avoid the inevitable line at Guest Services. Large luggage gets tagged and placed in the corridor by 11:00 PM for the crew to collect overnight. Before you put bags out, set aside everything you need for tomorrow morning in your carry-on.",
         list: [
           "Morning: final shot at <b>FlowRider</b>, rock wall, pool, top-deck activities",
-          "3:00 PM: Show — <b>Columbus, The Musical!</b> — Mark, Sonia, Jasmine, Nick",
           "Settle onboard account via the RC app to avoid Guest Services queues",
           "Pack large luggage, tag it, place in corridor by <b>11:00 PM</b> for valet",
           "Pack carry-on with next-day essentials <em>before</em> putting bags out"
+        ],
+        events: [
+          { time: '3:00 PM', kind: 'show', title: 'Columbus, the Musical!', where: 'Royal Theater · Deck 4, Forward · 50 min', note: 'Mark · Sonia · Jasmine · Nick' }
         ]
       },
       around: {
         list: [
-          "Ship-only day — explore decks you haven't yet",
-          "Boardwalk (Deck 6) — carousel, arcade, AquaTheater",
-          "Central Park (Deck 8) — open-air park with real trees · magical at night"
+          "Ship-only day, explore decks you haven't yet",
+          "Boardwalk (Deck 6), carousel, arcade, AquaTheater",
+          "Central Park (Deck 8), open-air park with real trees · magical at night"
         ]
       },
       see: {
         list: [
           "<b>Columbus, The Musical!</b> · 3:00 PM",
-          "AquaTheater outdoor show — final performance of the sailing",
+          "AquaTheater outdoor show, final performance of the sailing",
           "Ice Skating Rink sessions in afternoon"
         ]
       },
       food: {
         list: [
-          "Chef's Table or specialty dining — last chance",
+          "Chef's Table or specialty dining, last chance",
           "Order final room service breakfast for tomorrow"
         ]
       },
@@ -3451,17 +3804,17 @@ const DAYS = [
     allAboard: null,
     sections: {
       overview: {
-        text: "Disembark Barcelona, taxis to BCN, AA 113 to Miami, drive home to Clermont.",
+        text: "Today you say goodbye to Harmony of the Seas, fly home to Miami on AA 113, and finish with the drive back to Clermont. The plan is to be off the ship by 9:00 AM using the Self-Express option, which means you carry your own bags and skip ahead of the main disembarkation wave. Spanish customs is typically quick for US passports. Two taxis to BCN Terminal 1, arrive at the airport by 10:00 to 10:30 AM, and you are well ahead of the 11:20 AM check-in cutoff. Land in Miami at 4:20 PM, retrieve the cars from the Dolphin Garage, and aim for a 9:00 to 10:00 PM home arrival. Noel comes home from Pet Paradise on Monday morning.",
         list: [
           "Target: off the ship by <b>9:00 AM</b>",
-          "Self-Express: carry all bags yourself — first off the ship",
+          "Self-Express: carry all bags yourself, first off the ship",
           "Spanish customs typically fast for US passports"
         ]
       },
       around: {
         list: [
           "2 taxis from cruise terminal to BCN Airport Terminal 1 (~35–45 EUR per taxi, 30–40 min)",
-          "Tell the driver: <em>\"Aeroport Terminal 1\"</em> — AA uses T1",
+          "Tell the driver: <em>\"Aeroport Terminal 1\"</em>. AA uses T1",
           "Be at airport by <b>10:00–10:30 AM</b> · check-in closes 11:20 AM"
         ]
       },
@@ -3473,13 +3826,13 @@ const DAYS = [
       food: {
         list: [
           "Light breakfast onboard before disembark",
-          "Save real food for BCN airport — long flight ahead"
+          "Save real food for BCN airport, long flight ahead"
         ]
       },
       logistics: {
         tip: "<b>Pet Paradise</b>: Noel pickup Monday Jun 8 · 10:00 AM · Winter Garden",
         list: [
-          "Land MIA 4:20 PM — use APC kiosks for faster customs",
+          "Land MIA 4:20 PM, use APC kiosks for faster customs",
           "MIA Mover (free) from terminal to Dolphin Garage",
           "Route home: FL-836 → Turnpike (SR-91) north → Clermont (~3.5 hrs)",
           "Coffee stop: Yeehaw Junction service plaza (~1.5 hrs from MIA)",
@@ -3496,28 +3849,28 @@ const SHOWS = [
     who: 'Mark · Sonia · Jonathan · Heather', time: '8:00 PM',
     venue: 'Royal Theater · Decks 3–5',
     kind: 'Vocal Revue',
-    description: "A vocal-revue style production featuring four of the ship's lead singers performing across pop, soul, musical theater, and opera. Solos, harmonies, and full ensemble numbers backed by the Royal Theater orchestra. A lighter opener for embarkation night — about 50 minutes."
+    description: "A vocal revue featuring four of the ship's lead singers performing across pop, soul, musical theater, and opera. Expect solos, harmonies, and full ensemble numbers backed by the Royal Theater orchestra. It runs about fifty minutes and makes a lovely lighter opener for embarkation night, when nobody is quite ready for a full production yet."
   },
   {
     d: 4, dateM: 'Jun', dateD: 3, title: '1887: A Journey in Time', icon: '⛸️',
     who: 'ALL 6 GUESTS', time: '8:00 PM',
     venue: 'Studio B · Ice Rink · Deck 4',
     kind: 'Ice Spectacular',
-    description: "Harmony's signature ice show — yes, on a cruise ship. A team of competitive figure skaters tells a story across eras (1887 onwards) through synchronized routines, aerial work above the rink, and dramatic lighting. Studio B is intimate — every seat is close. Booked for all 6 of us."
+    description: "This is Harmony's signature ice show, and yes, it really is performed on a full ice rink in the middle of the ship. A team of competitive figure skaters tells a story spanning more than a century, beginning in 1887, through synchronized routines, aerial work above the rink, and dramatic lighting design. Studio B is an intimate venue, so every seat in the house feels close to the action. Booked for all six of you, and unmissable."
   },
   {
     d: 5, dateM: 'Jun', dateD: 4, title: 'The Fine Line', icon: '🤿',
     who: 'Mark · Sonia · Jonathan · Heather', time: '9:00 PM',
     venue: 'AquaTheater · Boardwalk · Aft',
     kind: 'Aqua / High-Dive',
-    description: "Outdoor aqua-acrobatic show in the AquaTheater at the back of the ship. High-divers from a 33-ft platform, synchronized swimmers, slackliners, and aerial silks over a deep performance pool. Best seats are mid-tier — front rows get splashed. Bring a light layer; it's open-air."
+    description: "An outdoor aqua-acrobatic spectacle staged in the AquaTheater at the very back of the ship. You will see high-divers launching from a thirty-three-foot platform, synchronized swimmers, slackliners, and aerial silk artists working over a deep performance pool. Aim for the middle tier of seating. The front rows will get splashed, which is fun for the kids and less fun for adults in nice clothes. The venue is open to the night sky, so bring a light layer in case the breeze picks up."
   },
   {
     d: 7, dateM: 'Jun', dateD: 6, title: 'Columbus, The Musical!', icon: '🎭',
     who: 'Mark · Sonia · Jasmine · Nick', time: '3:00 PM',
     venue: 'Royal Theater · Decks 3–5',
     kind: 'Comedy Musical',
-    description: "An original comedy musical staged in the Royal Theater. Played for laughs, written specifically for the Oasis-class fleet. Matinee on the final sea day — a relaxed finish before formal night #2."
+    description: "An original comedy musical written specifically for the Oasis-class fleet and staged in the Royal Theater. It is played squarely for laughs. The matinee timing on the final sea day makes it a relaxed, low-effort way to wind down the trip before the second formal night."
   }
 ];
 
@@ -3532,17 +3885,17 @@ const CHECKLIST = [
     'Screenshot all confirmation numbers in case of no internet'
   ]},
   { group: 'Apps & Tech', icon: '📱', items: [
-    'Royal Caribbean app downloaded — complete muster drill onboard',
+    'Royal Caribbean app downloaded, complete muster drill onboard',
     'Offline Google Maps for Barcelona, Palma, Marseille, Pisa, Rome, Naples',
     'WhatsApp downloaded for free group communication in Europe',
     'International data plan / T-Mobile plan confirmed',
-    'Pet Paradise app downloaded — monitor Noel via live webcam',
+    'Pet Paradise app downloaded, monitor Noel via live webcam',
     'VOOM ship Wi-Fi purchased before cruise (saves 20–30%)'
   ]},
   { group: 'Practical', icon: '💼', items: [
     'Notify banks and credit cards of travel dates and countries',
     'Exchange ~$200–$300 cash (EUR) per couple for tips & small purchases',
-    'Portable phone charger packed — long port days drain battery',
+    'Portable phone charger packed, long port days drain battery',
     'Reusable water bottle (Sagrada specifically requests this)',
     'Light scarves / wraps for religious site dress code',
     'Formal / smart casual attire for 2 formal nights onboard',
@@ -3550,7 +3903,7 @@ const CHECKLIST = [
   ]},
   { group: 'Noel', icon: '🐱', items: [
     'Call Pet Paradise (407) 378-0750 the day before drop-off to confirm',
-    'Drop off Noel at Pet Paradise, Winter Garden — May 28 at 12:00 PM',
+    'Drop off Noel at Pet Paradise, Winter Garden. May 28 at 12:00 PM',
     'Bring Noel\'s food, vaccination records (required), comfort items'
   ]}
 ];
@@ -3565,13 +3918,14 @@ const GUESTS = [
 ];
 
 const CONTACTS = [
-  { name: 'American Airlines', purpose: 'Both flights — AA 112 & AA 113', phone: '1-800-433-7300', conf: 'CJZIVG' },
+  { name: 'American Airlines', purpose: 'Both flights. AA 112 & AA 113', phone: '1-800-433-7300', conf: 'CJZIVG' },
   { name: 'Royal Caribbean', purpose: 'Cruise line · Ship: Harmony of the Seas', phone: '1-800-398-9819' },
-  { name: 'Barcelona Airbnb — Stan', purpose: 'Avinguda del Parallel 17 · HM8P4T5A5Z', phone: '+34 648 66 86 80' },
+  { name: 'SpringHill Suites Miami', purpose: 'Pre-flight hotel · Thu May 28 → Fri May 29 · Mark, Sonia, Jon, Heather', phone: '1-800-228-9290', conf: '6368610497' },
+  { name: 'Barcelona Airbnb. Stan', purpose: 'Avinguda del Parallel 17 · HM8P4T5A5Z', phone: '+34 648 66 86 80' },
   { name: 'Walks / Devour Tours', purpose: 'Sagrada Familia tour · PE168289929', phone: '+1 202 684 6916' },
-  { name: 'Pisa Excursion — Local Rep', purpose: 'Order #2113123 · Day-of Jun 3', phone: '+39 339 628 1382' },
-  { name: 'Pet Paradise — Winter Garden', purpose: 'Noel\'s boarding · 1175 Tomyn Blvd', phone: '(407) 378-0750' },
-  { name: 'US Embassy — Madrid', purpose: 'Lost passport in Spain', phone: '+34 91 587 2200' },
+  { name: 'Pisa Excursion. Local Rep', purpose: 'Order #2113123 · Day-of Jun 3', phone: '+39 339 628 1382' },
+  { name: 'Pet Paradise. Winter Garden', purpose: 'Noel\'s boarding · 1175 Tomyn Blvd', phone: '(407) 378-0750' },
+  { name: 'US Embassy. Madrid', purpose: 'Lost passport in Spain', phone: '+34 91 587 2200' },
   { name: 'Spain Emergency Services', purpose: 'Police / EU universal emergency', phone: '112' }
 ];
 
@@ -3676,7 +4030,7 @@ function openSettings(){
   setProfileTab('customize');
 }
 function closeTweaks(){
-  // No-op for legacy callers — controls now live inline in the Profile page
+  // No-op for legacy callers, controls now live inline in the Profile page
   window.parent.postMessage({type: '__edit_mode_dismissed'}, '*');
 }
 
@@ -3763,17 +4117,26 @@ function renderShows(){
    formal nights, and disembarkation are all in one chronological view. */
 const IMPORTANT_TIMES = [
   {
+    label: 'Thu May 28 · Drive Day',
+    events: [
+      { time: 'AM',       kind: 'travel', title: 'Mark drives to Miami',              meta: 'Mark · Sonia · Jonathan · Heather · ~4.5–5 hrs to MIA area' },
+      { time: '3:00 PM',  kind: 'stay',   title: 'Check in · SpringHill Suites Miami', meta: '6700 NW 7th St · Conf 6368610497 · 2 rooms (Mark+Sonia, Jon+Heather)' }
+    ]
+  },
+  {
     label: 'Fri May 29 · Travel Day',
     events: [
-      { time: '9:00 AM',  kind: 'travel', title: 'Leave Clermont for MIA',           meta: 'Mark & Nick · separate cars · ~4.5–5 hrs · FL-50 E → Turnpike S → SR-836 W' },
-      { time: '6:00 PM',  kind: 'flight', title: 'Depart MIA on AA 112',             meta: 'American Airlines · Terminal 1 · Conf CJZIVG · Overnight to BCN' }
+      { time: '9:00 AM',  kind: 'travel', title: 'Nick & Jasmine leave Orlando',     meta: 'Drive Orlando → MIA Dolphin Garage · ~3.5–4 hrs' },
+      { time: '12:00 PM', kind: 'stay',   title: 'Check out of SpringHill Miami',     meta: 'Mark/Sonia/Jon/Heather · free MIA shuttle on demand' },
+      { time: '4:00 PM',  kind: 'crit',   title: 'All 6 at MIA · Terminal 1',         meta: 'Latest arrival window for AA 112 (7:05 PM departure)' },
+      { time: '7:05 PM',  kind: 'flight', title: 'Depart MIA on AA 112',              meta: 'American Airlines · Terminal 1 · Conf CJZIVG · Overnight to BCN · Row 34' }
     ]
   },
   {
     label: 'Sat May 30 · Barcelona',
     events: [
-      { time: '9:05 AM',  kind: 'flight', title: 'Land Barcelona (BCN)',             meta: 'AA 112 arrival · 2 taxis to Airbnb (~25–35 EUR each)' },
-      { time: '11:00 AM', kind: 'stay',   title: 'Airbnb early bag drop',            meta: 'Avinguda del Parallel 17 · Host Stan · +34 648 66 86 80' },
+      { time: '10:10 AM', kind: 'flight', title: 'Land Barcelona (BCN)',             meta: 'AA 112 arrival · 2 taxis to Airbnb (~25–35 EUR each)' },
+      { time: '12:00 PM', kind: 'stay',   title: 'Airbnb early bag drop',            meta: 'Avinguda del Parallel 17 · Host Stan · +34 648 66 86 80' },
       { time: '2:15 PM',  kind: 'crit',   title: 'Be at Sagrada meeting point',      meta: 'Av. de Gaudí 2 · Green Walks sign · NO refunds for late arrivals' },
       { time: '2:30 PM',  kind: 'tour',   title: 'Sagrada Familia tour starts',      meta: '90 min · skip-the-line · Ref PE168289929 · Emergency +1 202 684 6916' }
     ]
@@ -3784,7 +4147,7 @@ const IMPORTANT_TIMES = [
       { time: '10:00 AM', kind: 'stay',   title: 'Airbnb checkout',                  meta: '2 taxis to cruise terminal (Moll Adossat · Pier B)' },
       { time: '12:30 PM', kind: 'port',   title: 'Arrive cruise terminal',           meta: 'Have passports + luggage tags ready' },
       { time: '1:30 PM',  kind: 'port',   title: 'Staterooms open',                  meta: 'Deck 10 · 10181 · 10182 · 10183' },
-      { time: '4:00 PM',  kind: 'crit',   title: 'All aboard — Harmony of the Seas', meta: 'Muster drill via RC app before sailing · Muster station C-4' },
+      { time: '4:00 PM',  kind: 'crit',   title: 'All aboard. Harmony of the Seas', meta: 'Muster drill via RC app before sailing · Muster station C-4' },
       { time: '5:00 PM',  kind: 'port',   title: 'Ship departs Barcelona',           meta: 'Watch from Deck 10' }
     ]
   },
@@ -3793,7 +4156,7 @@ const IMPORTANT_TIMES = [
     events: [
       { time: '8:30 AM',  kind: 'port',  title: 'Dock Palma de Mallorca',            meta: 'Self-guided · No excursion booked' },
       { time: '2:45 PM',  kind: 'crit',  title: 'Target back onboard',               meta: 'Buffer before all-aboard' },
-      { time: '3:30 PM',  kind: 'crit',  title: 'All aboard — Palma',                meta: 'Ship departs shortly after' },
+      { time: '3:30 PM',  kind: 'crit',  title: 'All aboard. Palma',                meta: 'Ship departs shortly after' },
       { time: 'After 6 PM', kind: 'formal', title: 'Formal Night #1',               meta: 'Returning from Palma · smart attire onboard' }
     ]
   },
@@ -3802,17 +4165,17 @@ const IMPORTANT_TIMES = [
     events: [
       { time: '9:30 AM',  kind: 'port', title: 'Dock Marseille',                     meta: 'Free port shuttle to Joliette / metro hub · Self-guided' },
       { time: '3:15 PM',  kind: 'crit', title: 'Target back onboard',                meta: 'Buffer before all-aboard' },
-      { time: '4:00 PM',  kind: 'crit', title: 'All aboard — Marseille',             meta: '' }
+      { time: '4:00 PM',  kind: 'crit', title: 'All aboard. Marseille',             meta: '' }
     ]
   },
   {
     label: 'Wed Jun 3 · Florence / Pisa (La Spezia)',
     events: [
-      { time: '7:00 AM',  kind: 'port',      title: 'Dock La Spezia',                meta: 'Tendered port — be ready early' },
+      { time: '7:00 AM',  kind: 'port',      title: 'Dock La Spezia',                meta: 'Tendered port, be ready early' },
       { time: '9:15 AM',  kind: 'crit',      title: 'Meet Pisa guide',               meta: 'OUTSIDE terminal · green shirt · Order #2113123' },
       { time: '9:30 AM',  kind: 'excursion', title: 'Pisa excursion starts',         meta: 'All 6 guests · Tower + Field of Miracles' },
       { time: '6:30 PM',  kind: 'crit',      title: 'Target back onboard',           meta: 'Buffer before all-aboard' },
-      { time: '7:30 PM',  kind: 'crit',      title: 'All aboard — La Spezia',        meta: '' },
+      { time: '7:30 PM',  kind: 'crit',      title: 'All aboard. La Spezia',        meta: '' },
       { time: '8:00 PM',  kind: 'show',      title: '1887: A Journey in Time',       meta: 'Ice Spectacular · Studio B · Deck 4 · ALL 6 GUESTS' }
     ]
   },
@@ -3822,16 +4185,16 @@ const IMPORTANT_TIMES = [
       { time: '7:30 AM',  kind: 'port',      title: 'Dock Civitavecchia',            meta: '' },
       { time: '9:30 AM',  kind: 'excursion', title: 'Panoramic Rome coach departs',  meta: 'Be at gangway 10 min early · All 6 guests · ~1–1.5 hrs each way' },
       { time: '5:30 PM',  kind: 'crit',      title: 'Target back onboard',           meta: 'Buffer before all-aboard' },
-      { time: '6:30 PM',  kind: 'crit',      title: 'All aboard — Civitavecchia',    meta: '' },
+      { time: '6:30 PM',  kind: 'crit',      title: 'All aboard. Civitavecchia',    meta: '' },
       { time: '9:00 PM',  kind: 'show',      title: 'The Fine Line',                 meta: 'AquaTheater · Boardwalk Aft · Mark · Sonia · Jonathan · Heather' }
     ]
   },
   {
     label: 'Fri Jun 5 · Naples · Capri',
     events: [
-      { time: '7:00 AM',  kind: 'port', title: 'Dock Naples',                        meta: 'Walk straight off the gangway — no shuttle' },
+      { time: '7:00 AM',  kind: 'port', title: 'Dock Naples',                        meta: 'Walk straight off the gangway, no shuttle' },
       { time: '6:00 PM',  kind: 'crit', title: 'Target back onboard',                meta: 'Buffer before all-aboard' },
-      { time: '7:00 PM',  kind: 'crit', title: 'All aboard — Naples',                meta: '' }
+      { time: '7:00 PM',  kind: 'crit', title: 'All aboard. Naples',                meta: '' }
     ]
   },
   {
@@ -3967,6 +4330,12 @@ const TABS = [
   { id: 'logistics', label: 'Logistics' }
 ];
 
+function ddNavLabel(d){
+  if(d.label === 'PRE') return 'Pre-Cruise · Barcelona';
+  const where = (d.where || '').replace(/\s*·.*$/, '');
+  return `Day ${String(d.n).padStart(2,'0')} · ${where}`;
+}
+
 function openDay(n){
   const d = DAYS.find(x => x.n === n);
   if(!d) return;
@@ -3983,6 +4352,30 @@ function openDay(n){
   `).join('');
 
   const bodyEl = document.getElementById('dd-body');
+  const idx = DAYS.findIndex(x => x.n === d.n);
+  const prevD = idx > 0 ? DAYS[idx - 1] : null;
+  const nextD = idx < DAYS.length - 1 ? DAYS[idx + 1] : null;
+  const navHTML = `
+    <nav class="dd-nav">
+      ${prevD ? `<button class="dd-nav-btn prev" onclick="openDay(${prevD.n})">
+        <span class="dd-nav-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </span>
+        <span class="dd-nav-text">
+          <span class="dd-nav-lbl">Previous</span>
+          <span class="dd-nav-where">${ddNavLabel(prevD)}</span>
+        </span>
+      </button>` : '<span></span>'}
+      ${nextD ? `<button class="dd-nav-btn next" onclick="openDay(${nextD.n})">
+        <span class="dd-nav-text">
+          <span class="dd-nav-lbl">Next</span>
+          <span class="dd-nav-where">${ddNavLabel(nextD)}</span>
+        </span>
+        <span class="dd-nav-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </button>` : '<span></span>'}
+    </nav>`;
   bodyEl.innerHTML = tabs.map((t, i) => renderDDSection(d, t, i+1)).join('') + (d.allAboard ? `
     <div class="all-aboard-banner">
       <div>
@@ -3990,7 +4383,7 @@ function openDay(n){
         ${d.targetReturn ? `<div style="font-size:11px;opacity:0.85;margin-top:2px">All aboard ${d.allAboard}</div>` : `<div style="font-size:11px;opacity:0.85;margin-top:2px">${d.where}</div>`}
       </div>
       <div class="time">${d.targetReturn || d.allAboard}</div>
-    </div>` : '');
+    </div>` : '') + navHTML;
 
   // Open first, then scroll to top (display:none can't be scrolled)
   document.getElementById('day-detail').classList.add('open');
@@ -4174,15 +4567,15 @@ function renderAnnieGreeting(){
   const g = currentGuest();
   const el = document.getElementById('annie-greeting');
   if(!el) return;
-  el.innerHTML = `Hey ${g.short} — I'm Annie, your concierge for the Harmony of the Seas trip. I've got every detail loaded up: your stateroom (${g.room}, on Deck 10 with ${g.partner}), flights, ports, excursions, contacts. Ask me anything.`;
+  el.innerHTML = `Hey ${g.short}. I'm Annie, your concierge for the Harmony of the Seas trip. I've got every detail loaded up: your stateroom (${g.room}, on Deck 10 with ${g.partner}), flights, ports, excursions, contacts. Ask me anything.`;
 }
 
 /* =========================================================
-   ANNIE — Real AI via window.claude.complete
+   ANNIE. Real AI via window.claude.complete
 ========================================================= */
 function buildTripContext(){
   const g = currentGuest();
-  return `You are Annie, the friendly, knowledgeable AI concierge for a group of 6 travelers on Harmony of the Seas, a 7-night Western Mediterranean cruise (May 31 — Jun 7, 2026).
+  return `You are Annie, the friendly, knowledgeable AI concierge for a group of 6 travelers on Harmony of the Seas, a 7-night Western Mediterranean cruise (May 31. Jun 7, 2026).
 
 YOU ARE CURRENTLY TALKING WITH: ${g.name} (call them ${g.short}). They are staying in <b>Stateroom ${g.room}</b> on Deck 10 with ${g.partner}. Address them by name and speak directly to their stateroom/roommate when relevant.
 
@@ -4192,14 +4585,15 @@ GROUP STATEROOM ASSIGNMENTS (all on Deck 10, Balcony):
 - 10183: Jasmine Coleman & Nicholas (Nick) Ribadeneira
 
 ITINERARY:
-- Fri May 29: Drive Clermont → MIA (2 cars, leave 9:00 AM). AA 112 outbound at 6:00 PM. Park MIA Dolphin Garage.
-- Sat May 30: Land BCN 9:05 AM. 2 taxis to Airbnb (Avinguda del Parallel 17, Poble Sec, host Stan +34 648 66 86 80, conf HM8P4T5A5Z). Early bag drop 11 AM. SAGRADA FAMILIA HIGHLIGHTS TOUR at 2:30 PM (Ref PE168289929 / MSY2BZKM, Walks/Devour Tours). Meet 2:15 PM at Av. de Gaudí 2 — guide holds a GREEN WALKS SIGN at the lamp post between KFC and Burger King. Skip-the-line tickets + expert guide, 1 hr 30 min. Dress code: shoulders AND knees covered.
+- Thu May 28: Mark, Sonia, Jonathan, Heather drive Clermont → Miami. Overnight at SpringHill Suites by Marriott Miami Airport South Blue Lagoon (6700 NW 7th St, Miami FL 33126). Conf 6368610497, 2 rooms. Check-in 3 PM, check-out Fri noon. Free MIA shuttle.
+- Fri May 29: Nick & Jasmine drive Orlando → MIA (~9 AM). Mark/Sonia/Jon/Heather check out of Miami hotel by noon, MIA shuttle. AA 112 outbound at 7:05 PM (Row 34: 34A Jasmine, 34B Nick, 34C Sonia, 34D Mark, 34E Jonathan, 34G Heather). Park MIA Dolphin Garage.
+- Sat May 30: Land BCN 10:10 AM. 2 taxis to Airbnb (Avinguda del Parallel 17, Poble Sec, host Stan +34 648 66 86 80, conf HM8P4T5A5Z). Early bag drop 11 AM. SAGRADA FAMILIA HIGHLIGHTS TOUR at 2:30 PM (Ref PE168289929 / MSY2BZKM, Walks/Devour Tours). Meet 2:15 PM at Av. de Gaudí 2, guide holds a GREEN WALKS SIGN at the lamp post between KFC and Burger King. Skip-the-line tickets + expert guide, 1 hr 30 min. Dress code: shoulders AND knees covered.
 - Sun May 31 / Day 1: Airbnb checkout 10:00 AM. Barcelona embarkation. Ship Harmony of the Seas departs 5:00 PM, all aboard 4:00 PM. Muster station C-4. Show: Voices, 8:00 PM (Mark, Sonia, Jonathan, Heather).
 - Day 2 (Mon Jun 1): Palma De Mallorca, Spain. Gangway 8:30 AM – 3:30 PM, target onboard 2:45 PM. No excursion (self-guided). Likely Formal Night #1.
 - Day 3 (Tue Jun 2): Provence (Marseille), France. Gangway 9:30 AM – 4:00 PM, target onboard 3:15 PM. Self-guided.
 - Day 4 (Wed Jun 3): Florence/Pisa (La Spezia), Italy. Gangway 7:00 AM – 7:30 PM, target onboard 6:30 PM. PISA EXCURSION BOOKED for all 6 (Order #2113123). Meet guide OUTSIDE terminal in GREEN SHORE EXPERIENCE T-SHIRT by 9:15 AM. Tour 9:30 AM. Local rep +39 339 628 1382, emergency +1 954 302 7842. Show tonight: 1887: A Journey in Time (ice show at Studio B), all 6 guests, 8:00 PM.
 - Day 5 (Thu Jun 4): Rome (Civitavecchia), Italy. Gangway 7:30 AM – 6:30 PM, target onboard 5:30 PM. PANORAMIC ROME EXCURSION BOOKED via Royal Caribbean for all 6. Coach departs ship 9:30 AM. Vatican dress code: shoulders AND knees covered, mandatory. Show: The Fine Line (AquaTheater high-dive), 9:00 PM (Mark, Sonia, Jonathan, Heather).
-- Day 6 (Fri Jun 5): Naples / Capri, docked 7:00 AM–7:00 PM, all aboard 7:00 PM. Self-guided, most walkable port. Pizza at L'Antica Pizzeria da Michele (Via Cesare Sersale 1) — Margherita/Marinara only, cash, arrive before noon.
+- Day 6 (Fri Jun 5): Naples / Capri, docked 7:00 AM–7:00 PM, all aboard 7:00 PM. Self-guided, most walkable port. Pizza at L'Antica Pizzeria da Michele (Via Cesare Sersale 1). Margherita/Marinara only, cash, arrive before noon.
 - Day 7 (Sat Jun 6): Sea Day cruising back to Barcelona. Show: Columbus, The Musical! at 3:00 PM (Royal Theater). Formal Night #2 almost certain. Pack large luggage by 11:00 PM.
 - Day 8 (Sun Jun 7): Disembark Barcelona, AA 113 12:20 PM BCN → MIA, drive home to Clermont FL. Pet Paradise pickup of Noel Monday Jun 8 at 10:00 AM.
 
@@ -4207,10 +4601,10 @@ KEY FACTS:
 - Ship: Harmony of the Seas, Royal Caribbean Oasis class
 - Group of 6: Mark, Sonia, Jonathan, Heather, Jasmine, Nick
 - Flights: AA 112 outbound, AA 113 return, confirmation CJZIVG
-- T-Mobile: Free 2G in EU. Airplane Mode at sea — maritime roaming $2.50-5/MB.
+- T-Mobile: Free 2G in EU. Airplane Mode at sea, maritime roaming $2.50-5/MB.
 - Two excursions booked: Pisa (Day 4) and Panoramic Rome (Day 5). Other ports are self-guided.
 
-STYLE: Warm, concise, useful. Address ${g.short} by name in your first reply and where natural. Use specific times from the itinerary in 12-hour format. Keep replies short (2-4 sentences usually). Do NOT use any emojis or pictographs in your replies — keep responses text-only. If asked something not in the trip, say so honestly.`;
+STYLE: Warm, concise, useful. Address ${g.short} by name in your first reply and where natural. Use specific times from the itinerary in 12-hour format. Keep replies short (2-4 sentences usually). Do NOT use any emojis or pictographs in your replies, keep responses text-only. NEVER use em dashes (—) in your replies. Use periods, commas, semicolons, or parentheses instead. En dashes are also forbidden, prefer 'to' for ranges. If asked something not in the trip, say so honestly.`;
 }
 
 async function askAnnie(prompt){
@@ -4218,7 +4612,7 @@ async function askAnnie(prompt){
   return sendAnnie(prompt);
 }
 
-/* Generic confirm modal — replaces window.confirm() so we can style it */
+/* Generic confirm modal, replaces window.confirm() so we can style it */
 function showConfirm(opts){
   const { title='Confirm', body='Are you sure?', confirmText='Confirm', cancelText='Cancel', danger=false, onConfirm } = opts || {};
   const modal = document.getElementById('confirm-modal');
@@ -4263,7 +4657,7 @@ function startNewChat(){
   });
 }
 
-/* Hero "Ask Annie Anything" input — jumps to the Annie page with the prompt seeded.
+/* Hero "Ask Annie Anything" input, jumps to the Annie page with the prompt seeded.
    Accepts the submitting <form> so it works for both the in-hero and fixed bars. */
 function askAnnieFromHero(form){
   const heroInput = form ? form.querySelector('input[type="text"]') : null;
@@ -4301,14 +4695,14 @@ async function sendAnnie(text){
       ]
     });
     document.getElementById('typing-msg')?.remove();
-    appendMsg('annie', reply || "Sorry, I couldn't quite catch that — try again?");
+    appendMsg('annie', reply || "Sorry, I couldn't quite catch that, try again?");
   } catch(err){
     document.getElementById('typing-msg')?.remove();
     appendMsg('annie', "I'm having trouble reaching my brain right now. Try again in a moment.");
   }
 }
 
-/* Avatar markup for a chat message — Annie's logo or the current guest's
+/* Avatar markup for a chat message. Annie's logo or the current guest's
    gradient + initial (same treatment as on the profile page). */
 function msgAvatarHtml(role){
   if(role === 'annie'){
@@ -4322,6 +4716,10 @@ function msgAvatarHtml(role){
 }
 
 function appendMsg(role, text){
+  // Defensive: strip em dashes from any text we display, in case the model used them.
+  if(typeof text === 'string'){
+    text = text.replace(/ \u2014 /g, ', ').replace(/\u2014/g, ', ');
+  }
   state.messages.push({ role, text });
   saveState();
   const scroll = document.getElementById('chat-scroll');
@@ -4330,7 +4728,7 @@ function appendMsg(role, text){
   el.innerHTML = `${msgAvatarHtml(role)}<div class="msg-bubble">${escapeHtml(text)}</div>`;
   scroll.appendChild(el);
   // For Annie's reply, scroll so the TOP of the response is visible at the top of the
-  // chat — so the user can read from the beginning without scrolling up themselves.
+  // chat, so the user can read from the beginning without scrolling up themselves.
   // For user messages, keep scrolling to the bottom (recent activity).
   requestAnimationFrame(() => {
     if(role === 'annie'){
@@ -4360,7 +4758,7 @@ window.addEventListener('message', (e) => {
 window.parent.postMessage({type: '__edit_mode_available'}, '*');
 
 function toggleTweaks(){
-  // External callers (e.g. parent toolbar) — jump to Profile › Customize
+  // External callers (e.g. parent toolbar), jump to Profile › Customize
   goTab('profile');
   setProfileTab('customize');
 }
@@ -4428,7 +4826,11 @@ function init(){
       const scroll = document.getElementById('chat-scroll');
       const el = document.createElement('div');
       el.className = 'msg ' + m.role;
-      el.innerHTML = `${msgAvatarHtml(m.role)}<div class="msg-bubble">${escapeHtml(m.text)}</div>`;
+      // Defensive: strip em dashes from stored chat history too.
+      const cleanText = (typeof m.text === 'string')
+        ? m.text.replace(/ \u2014 /g, ', ').replace(/\u2014/g, ', ')
+        : m.text;
+      el.innerHTML = `${msgAvatarHtml(m.role)}<div class="msg-bubble">${escapeHtml(cleanText)}</div>`;
       scroll.appendChild(el);
     });
     // hide suggestions if there's history
@@ -4440,7 +4842,7 @@ function init(){
 
   // Annie input: on the home page, the in-hero input is the default. Once it scrolls
   // off the top of the viewport we add .visible to the fixed bar so it appears at the
-  // top — making the input feel like it "pinned" there.
+  // top, making the input feel like it "pinned" there.
   const heroAnnie = document.getElementById('hero-annie');
   const fixedAnnie = document.getElementById('annie-bar-fixed');
   function updateAnnieBar(){
@@ -4457,7 +4859,7 @@ function init(){
   window.__updateAnnieBar = updateAnnieBar;
   updateAnnieBar();
 
-  // Keep all Ask-Annie inputs in sync — typing in one populates the other(s) so the
+  // Keep all Ask-Annie inputs in sync, typing in one populates the other(s) so the
   // user's text isn't lost when the hero input scrolls off and the fixed bar takes over.
   const annieInputs = document.querySelectorAll('.ask-annie-input input[type="text"]');
   annieInputs.forEach(inp => {
